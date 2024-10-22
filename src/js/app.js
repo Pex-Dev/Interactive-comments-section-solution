@@ -10,9 +10,7 @@ document.addEventListener('DOMContentLoaded',function () {
         const comments = data.comments; 
 
         //Sort comments by score
-        comments.sort((a, b) => b.score - a.score);       
-        console.log(comments);
-        
+        comments.sort((a, b) => b.score - a.score);               
     
         renderComments(); 
 
