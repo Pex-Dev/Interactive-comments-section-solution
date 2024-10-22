@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded',function () {
         commentClone.querySelector('[data-container="user-avatar"]').appendChild(createUserAvatar(userAvatar,username));        
         commentClone.querySelector('[data-container="username"]').textContent = username;        
 
-        const comentScore =  commentClone.querySelector('#score');            
+        const comentScore =  commentClone.querySelector('[data-container="score"]');            
         const scoreContainer = commentClone.querySelector('[data-container="score-container"]');
         
         const btnScoreUp = commentClone.querySelector('[data-container="score-up"]');
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded',function () {
         }
 
         //Set create date
-        commentClone.querySelector('#created-at').textContent = diffForHumans(new Date(comment.createdAt));
+        commentClone.querySelector('[data-container="created-at"]').textContent = diffForHumans(new Date(comment.createdAt));
 
         //Reply the comment
         const replyButton = commentClone.querySelector('[data-container="reply-button"]');
